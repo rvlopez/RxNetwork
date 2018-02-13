@@ -25,3 +25,22 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    // Application ID
+    applicationId = "com.example.rviciana.reactiveconnection"
+
+    // Version
+    compileSdkVersion = 27
+    minSdkVersion = 15
+    targetSdkVersion = 27
+    versionCode = 20180213
+    versionName = "1.0"
+    testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+
+    // Dependencies
+    appCompatVersion = '27.0.2'
+    constraintLayoutVersion = '1.0.2'
+    rxJavaVersion = '2.1.9'
+    rxAndroidVersion = '2.0.2'
+}
